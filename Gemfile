@@ -15,6 +15,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'pundit'
 gem 'devise'
 gem 'decent_exposure', '3.0.0'
+gem 'rails-erd'
+
 
 
 gem 'bootsnap', '>= 1.1.0', require: false
