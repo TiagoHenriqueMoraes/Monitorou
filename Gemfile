@@ -16,6 +16,7 @@ gem 'pundit'
 gem 'devise'
 gem 'decent_exposure', '3.0.0'
 gem 'jsonapi-resources'
+gem "slim-rails"
 
 
 
@@ -30,6 +31,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "better_errors"
 end
 
 group :test do
