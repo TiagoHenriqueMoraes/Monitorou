@@ -1,0 +1,15 @@
+pt-BR:
+  titles:
+    new: "Incluir"
+    edit: "Editar"
+    destroy: "Excluir"
+    submit: "Enviar"
+    submiting: "Enviando..."
+    cancel: "Cancelar"
+    prompt: "Selecione"
+    all: "Todos"
+    confirm: "Essa operação não poderá ser desfeita. Deseja continuar?"
+    unauthorized: "Você não está autorizado a executar esta ação."
+
+    user: "Usuários"
+

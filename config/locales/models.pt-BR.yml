@@ -1,0 +1,21 @@
+pt-BR:
+  attributes:
+    created_at: 'Cadastrado em'
+    updated_at: 'Atualizado em'
+
+  activerecord:
+    not_found: 'Registro não encontrado.'
+
+    models:
+      user: 'Usuário'
+    
+    attributes:
+      user:
+        name: "Nome"
+        kind: "Tipo"
+        kinds:
+          admin: "Administrador"
+          student: "Aluno"
+          monitor: "Monitor"
+
+    
