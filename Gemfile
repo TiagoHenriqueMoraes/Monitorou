@@ -17,13 +17,19 @@ gem 'devise'
 gem 'decent_exposure', '3.0.0'
 gem 'jsonapi-resources'
 gem "slim-rails"
-
-
+gem 'rails-i18n', '~> 5.1'
+gem 'simple_form'
+gem "bootstrap-sass"
+gem "bootstrap3-datetimepicker-rails", "~> 4.17.47"
+gem "font-awesome-rails"
+gem "bootstrap-datepicker-rails"
+gem "jquery-rails"
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
 end
 
 group :development do
