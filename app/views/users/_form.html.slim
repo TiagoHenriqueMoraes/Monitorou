@@ -1,0 +1,5 @@
+= simple_form_for :user do |f|
+  = f.input :name
+  = f.input :kind, as: :radio_buttons, collection: User.kinds.map { |k, _| [I18n.t("activerecord.attributes.user.kinds.#{k}"), k] }
+
+  = form_actions

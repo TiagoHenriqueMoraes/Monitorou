@@ -4,7 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-    has_many :worktimes
-    has_many :subjects
-    has_one  :course
+  has_many :worktimes
+  has_many :subjects
+  has_one  :course
+
+  enum kind: [:student, :monitor, :admin]
 end
