@@ -8,7 +8,6 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
@@ -24,7 +23,7 @@ gem "bootstrap3-datetimepicker-rails", "~> 4.17.47"
 gem "font-awesome-rails"
 gem "bootstrap-datepicker-rails"
 gem "jquery-rails"
-
+gem "kaminari"
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do

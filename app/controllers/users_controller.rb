@@ -8,18 +8,24 @@ class UsersController < ApplicationController
   end
 
   def new
+    authorize :user
   end
 
   def create
+    authorize :user
+    user.save
   end
 
   def edit
+    authorize :user
   end
   
   def update
+    authorize :user
   end
 
   def destroy
+    authorize :user
   end
 
   private
