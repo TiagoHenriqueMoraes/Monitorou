@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2018_09_11_122602) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "subject_id"
-    t.index ["subject_id"], name: "index_courses_on_subject_id"
+    t.bigint "institution_id"
+    t.index ["institution_id"], name: "index_courses_on_institution_id"
   end
 
   create_table "institutions", force: :cascade do |t|
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2018_09_11_122602) do
     t.bigint "worktime_id"
     t.bigint "subject_id"
     t.bigint "course_id"
+    t.bigint "institution_id"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -52,6 +53,7 @@ ActiveRecord::Schema.define(version: 2018_09_11_122602) do
     t.datetime "remember_created_at"
     t.index ["course_id"], name: "index_users_on_course_id"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["institution_id"], name: "index_users_on_institution_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["subject_id"], name: "index_users_on_subject_id"
     t.index ["worktime_id"], name: "index_users_on_worktime_id"
@@ -65,9 +67,10 @@ ActiveRecord::Schema.define(version: 2018_09_11_122602) do
     t.index ["user_id"], name: "index_worktimes_on_user_id"
   end
 
-  add_foreign_key "courses", "subjects"
+  add_foreign_key "courses", "institutions"
   add_foreign_key "subjects", "courses"
   add_foreign_key "users", "courses"
+  add_foreign_key "users", "institutions"
   add_foreign_key "users", "subjects"
   add_foreign_key "users", "worktimes"
   add_foreign_key "worktimes", "users"
