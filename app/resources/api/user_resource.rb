@@ -1,5 +1,6 @@
 module Api  
   class UserResource < JSONAPI::Resource
-    attributes :name, :institution, :course
+    attributes :name, :email
+
   end
 end
