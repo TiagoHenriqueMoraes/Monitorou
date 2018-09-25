@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   root to: "dashboard#index"
 
-
-  jsonapi_resources :users
+  namespace :api do
+    jsonapi_resources :users
+  end
 end
