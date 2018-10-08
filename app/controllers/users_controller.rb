@@ -12,7 +12,10 @@ class UsersController < ApplicationController
   end
 
   def create
+    puts "entrei no create"
+    binding.pry
     authorize :user
+    puts "passei"
     user.save
   end
 
@@ -22,6 +25,7 @@ class UsersController < ApplicationController
   
   def update
     authorize :user
+    user.save
   end
 
   def destroy

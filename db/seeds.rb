@@ -20,6 +20,7 @@ end
 @student = User.create(
   name: "estudante",
   email: "estudante@fatec",
+  institution: @fatec,
   kind: 0,
   password: "123456",
   password_confirmation: "123456"
@@ -28,6 +29,7 @@ end
 @monitor = User.create(
   name: "monitor",
   email: "monitor@fatec",
+  institution: @fatec,
   kind: 1,
   password: "123456",
   password_confirmation: "123456"
@@ -36,6 +38,7 @@ end
 @admin = User.create(
   name: "admin",
   email: "admin@fatec",
+  institution: @fatec,
   kind: 2,
   password: "123456",
   password_confirmation: "123456"

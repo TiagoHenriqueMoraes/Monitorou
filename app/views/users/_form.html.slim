@@ -1,7 +1,8 @@
 = simple_form_for user do |f|
   = f.input :name, required: true
+  = f.input :password, required: true
+  = f.input :password_confirmation, required: true
   = f.input :email, required: true
   = f.input :kind, as: :radio_buttons, collection: User.kinds.map { |k, _| [I18n.t("activerecord.attributes.user.kinds.#{k}"), k] }
 
-
-  = form_actions
+  = f.submit
